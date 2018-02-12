@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F24D8B8C6C8E1DB3D9FC87 /* libPods-DailyWireTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900CA1738CDBFF96ED4E505C /* libPods-DailyWireTests.a */; };
+		173495E9B7F60F25E91789F7 /* libPods-DailyWireUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8AFCC42B57D65895121829 /* libPods-DailyWireUITests.a */; };
+		5838AF93202DD734000AEA0C /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838AF92202DD734000AEA0C /* IntroViewController.m */; };
+		58603F76202A33E80037A93F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58603F75202A33E80037A93F /* LaunchScreen.storyboard */; };
+		5874B35B2029B15C0050FED7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5874B35A2029B15C0050FED7 /* NotificationService.m */; };
+		5874B35F2029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5874B3572029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		587D539A2031742A00CBB7A0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D53982031742A00CBB7A0 /* SettingsViewController.m */; };
+		5894BE692029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5894BE6A2029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		5894BE6C2029BB5C008AA9A1 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5894BE6B2029BB5C008AA9A1 /* OneSignal.framework */; };
+		58BE73E7202C4D65001A1EC8 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BE73E6202C4D65001A1EC8 /* LaunchViewController.m */; };
+		58C803562021D3FB0077E79F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803552021D3FB0077E79F /* AppDelegate.m */; };
+		58C803592021D3FB0077E79F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803582021D3FB0077E79F /* WebViewController.m */; };
+		58C8035C2021D3FB0077E79F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035A2021D3FB0077E79F /* Main.storyboard */; };
+		58C8035E2021D3FB0077E79F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
+		58C803642021D3FB0077E79F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803632021D3FB0077E79F /* main.m */; };
+		58C8036E2021D3FB0077E79F /* DailyWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8036D2021D3FB0077E79F /* DailyWireTests.m */; };
+		58C803792021D3FB0077E79F /* DailyWireUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803782021D3FB0077E79F /* DailyWireUITests.m */; };
+		D7EFFD76476E5098432FFEC5 /* libPods-DailyWire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69248F705FC40D4EA9AC0D6E /* libPods-DailyWire.a */; };
+		FBAF953E806B6877F7392A1F /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1D8DF3B48B69F87C4C548 /* libPods-OneSignalNotificationServiceExtension.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5874B35D2029B15C0050FED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58C803492021D3FB0077E79F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5874B3562029B15C0050FED7;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+		58C8036A2021D3FB0077E79F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58C803492021D3FB0077E79F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C803502021D3FB0077E79F;
+			remoteInfo = DailyWire;
+		};
+		58C803752021D3FB0077E79F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58C803492021D3FB0077E79F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C803502021D3FB0077E79F;
+			remoteInfo = DailyWire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5874B3632029B15C0050FED7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5874B35F2029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E8601965B73816EED86A0C6 /* Pods-DailyWireUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWireUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWireUITests/Pods-DailyWireUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E23F94436CA34C5D61B6283 /* Pods-DailyWireUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWireUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWireUITests/Pods-DailyWireUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F4C0FA7B71569AAEFBFBE59 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3138511AD93B075CF6012CAE /* Pods-DailyWire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWire.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWire/Pods-DailyWire.release.xcconfig"; sourceTree = "<group>"; };
+		5838AF91202DD734000AEA0C /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		5838AF92202DD734000AEA0C /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		58603F75202A33E80037A93F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		586B1C8A2029B5860066D592 /* DailyWire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWire.entitlements; sourceTree = "<group>"; };
+		5874B3572029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5874B3592029B15C0050FED7 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		5874B35A2029B15C0050FED7 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		5874B35C2029B15C0050FED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587D53982031742A00CBB7A0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		587D53992031742A00CBB7A0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5894BE6A2029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5894BE6B2029BB5C008AA9A1 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		58BE73E5202C4D3A001A1EC8 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		58BE73E6202C4D65001A1EC8 /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		58C803512021D3FB0077E79F /* DailyWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C803542021D3FB0077E79F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58C803552021D3FB0077E79F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58C803572021D3FB0077E79F /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		58C803582021D3FB0077E79F /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		58C8035B2021D3FB0077E79F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58C8035D2021D3FB0077E79F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58C803622021D3FB0077E79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C803632021D3FB0077E79F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58C803692021D3FB0077E79F /* DailyWireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C8036D2021D3FB0077E79F /* DailyWireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyWireTests.m; sourceTree = "<group>"; };
+		58C8036F2021D3FB0077E79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C803742021D3FB0077E79F /* DailyWireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C803782021D3FB0077E79F /* DailyWireUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyWireUITests.m; sourceTree = "<group>"; };
+		58C8037A2021D3FB0077E79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69248F705FC40D4EA9AC0D6E /* libPods-DailyWire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DailyWire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF0CC5EB87B1E3C7193D977 /* Pods-DailyWireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWireTests/Pods-DailyWireTests.debug.xcconfig"; sourceTree = "<group>"; };
+		900CA1738CDBFF96ED4E505C /* libPods-DailyWireTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DailyWireTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10D2CCD0F5B2C8BD2E2A7DD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		CFBAEB942EEBA85B77AF3671 /* Pods-DailyWire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWire/Pods-DailyWire.debug.xcconfig"; sourceTree = "<group>"; };
+		EE30F1AE99769F7BBAAE682E /* Pods-DailyWireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyWireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyWireTests/Pods-DailyWireTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF8AFCC42B57D65895121829 /* libPods-DailyWireUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DailyWireUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C1D8DF3B48B69F87C4C548 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5874B3542029B15C0050FED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAF953E806B6877F7392A1F /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C8034E2021D3FB0077E79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5894BE6C2029BB5C008AA9A1 /* OneSignal.framework in Frameworks */,
+				5894BE692029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+				D7EFFD76476E5098432FFEC5 /* libPods-DailyWire.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803662021D3FB0077E79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F24D8B8C6C8E1DB3D9FC87 /* libPods-DailyWireTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803712021D3FB0077E79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173495E9B7F60F25E91789F7 /* libPods-DailyWireUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B1A968A232C9A0A3DFD230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFBAEB942EEBA85B77AF3671 /* Pods-DailyWire.debug.xcconfig */,
+				3138511AD93B075CF6012CAE /* Pods-DailyWire.release.xcconfig */,
+				6FF0CC5EB87B1E3C7193D977 /* Pods-DailyWireTests.debug.xcconfig */,
+				EE30F1AE99769F7BBAAE682E /* Pods-DailyWireTests.release.xcconfig */,
+				0E8601965B73816EED86A0C6 /* Pods-DailyWireUITests.debug.xcconfig */,
+				1E23F94436CA34C5D61B6283 /* Pods-DailyWireUITests.release.xcconfig */,
+				2F4C0FA7B71569AAEFBFBE59 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				A10D2CCD0F5B2C8BD2E2A7DD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5874B3582029B15C0050FED7 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5874B3592029B15C0050FED7 /* NotificationService.h */,
+				5874B35A2029B15C0050FED7 /* NotificationService.m */,
+				5874B35C2029B15C0050FED7 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		58C803482021D3FB0077E79F = {
+			isa = PBXGroup;
+			children = (
+				58C803532021D3FB0077E79F /* DailyWire */,
+				58C8036C2021D3FB0077E79F /* DailyWireTests */,
+				58C803772021D3FB0077E79F /* DailyWireUITests */,
+				5874B3582029B15C0050FED7 /* OneSignalNotificationServiceExtension */,
+				58C803522021D3FB0077E79F /* Products */,
+				03B1A968A232C9A0A3DFD230 /* Pods */,
+				77DC6BE1FD06D0D97ADF262D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58C803522021D3FB0077E79F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58C803512021D3FB0077E79F /* DailyWire.app */,
+				58C803692021D3FB0077E79F /* DailyWireTests.xctest */,
+				58C803742021D3FB0077E79F /* DailyWireUITests.xctest */,
+				5874B3572029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58C803532021D3FB0077E79F /* DailyWire */ = {
+			isa = PBXGroup;
+			children = (
+				586B1C8A2029B5860066D592 /* DailyWire.entitlements */,
+				58C803542021D3FB0077E79F /* AppDelegate.h */,
+				58C803552021D3FB0077E79F /* AppDelegate.m */,
+				58BE73E5202C4D3A001A1EC8 /* LaunchViewController.h */,
+				58BE73E6202C4D65001A1EC8 /* LaunchViewController.m */,
+				5838AF91202DD734000AEA0C /* IntroViewController.h */,
+				5838AF92202DD734000AEA0C /* IntroViewController.m */,
+				587D53992031742A00CBB7A0 /* SettingsViewController.h */,
+				587D53982031742A00CBB7A0 /* SettingsViewController.m */,
+				58C803572021D3FB0077E79F /* WebViewController.h */,
+				58C803582021D3FB0077E79F /* WebViewController.m */,
+				58603F75202A33E80037A93F /* LaunchScreen.storyboard */,
+				58C8035A2021D3FB0077E79F /* Main.storyboard */,
+				58C8035D2021D3FB0077E79F /* Assets.xcassets */,
+				58C803622021D3FB0077E79F /* Info.plist */,
+				58C803632021D3FB0077E79F /* main.m */,
+			);
+			path = DailyWire;
+			sourceTree = "<group>";
+		};
+		58C8036C2021D3FB0077E79F /* DailyWireTests */ = {
+			isa = PBXGroup;
+			children = (
+				58C8036D2021D3FB0077E79F /* DailyWireTests.m */,
+				58C8036F2021D3FB0077E79F /* Info.plist */,
+			);
+			path = DailyWireTests;
+			sourceTree = "<group>";
+		};
+		58C803772021D3FB0077E79F /* DailyWireUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58C803782021D3FB0077E79F /* DailyWireUITests.m */,
+				58C8037A2021D3FB0077E79F /* Info.plist */,
+			);
+			path = DailyWireUITests;
+			sourceTree = "<group>";
+		};
+		77DC6BE1FD06D0D97ADF262D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5894BE6B2029BB5C008AA9A1 /* OneSignal.framework */,
+				5894BE6A2029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a */,
+				69248F705FC40D4EA9AC0D6E /* libPods-DailyWire.a */,
+				900CA1738CDBFF96ED4E505C /* libPods-DailyWireTests.a */,
+				EF8AFCC42B57D65895121829 /* libPods-DailyWireUITests.a */,
+				F5C1D8DF3B48B69F87C4C548 /* libPods-OneSignalNotificationServiceExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5874B3562029B15C0050FED7 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5874B3622029B15C0050FED7 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DE7A668E8876DCB8FB0BF182 /* [CP] Check Pods Manifest.lock */,
+				5874B3532029B15C0050FED7 /* Sources */,
+				5874B3542029B15C0050FED7 /* Frameworks */,
+				5874B3552029B15C0050FED7 /* Resources */,
+				396427325A058B508AD16007 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 5874B3572029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		58C803502021D3FB0077E79F /* DailyWire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C8037D2021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWire" */;
+			buildPhases = (
+				8C6BB56B2EB6919ED5413F1D /* [CP] Check Pods Manifest.lock */,
+				58C8034D2021D3FB0077E79F /* Sources */,
+				58C8034E2021D3FB0077E79F /* Frameworks */,
+				58C8034F2021D3FB0077E79F /* Resources */,
+				5874B3632029B15C0050FED7 /* Embed App Extensions */,
+				99C4F65616138BD637FEA4EA /* [CP] Embed Pods Frameworks */,
+				450370357962BE041FBC1FC0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5874B35E2029B15C0050FED7 /* PBXTargetDependency */,
+			);
+			name = DailyWire;
+			productName = DailyWire;
+			productReference = 58C803512021D3FB0077E79F /* DailyWire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58C803682021D3FB0077E79F /* DailyWireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C803802021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWireTests" */;
+			buildPhases = (
+				E7A2444519BAC527AA9CA9B2 /* [CP] Check Pods Manifest.lock */,
+				58C803652021D3FB0077E79F /* Sources */,
+				58C803662021D3FB0077E79F /* Frameworks */,
+				58C803672021D3FB0077E79F /* Resources */,
+				DC9F0FA876FFDBCC4099E0A6 /* [CP] Embed Pods Frameworks */,
+				0D5ABFA3B34076E1D9383924 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58C8036B2021D3FB0077E79F /* PBXTargetDependency */,
+			);
+			name = DailyWireTests;
+			productName = DailyWireTests;
+			productReference = 58C803692021D3FB0077E79F /* DailyWireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58C803732021D3FB0077E79F /* DailyWireUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C803832021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWireUITests" */;
+			buildPhases = (
+				9228862789346176DA9F4261 /* [CP] Check Pods Manifest.lock */,
+				58C803702021D3FB0077E79F /* Sources */,
+				58C803712021D3FB0077E79F /* Frameworks */,
+				58C803722021D3FB0077E79F /* Resources */,
+				AC56ED8692E504D82BD5E6E9 /* [CP] Embed Pods Frameworks */,
+				CE5B25E2C06CBC5821FA4D27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58C803762021D3FB0077E79F /* PBXTargetDependency */,
+			);
+			name = DailyWireUITests;
+			productName = DailyWireUITests;
+			productReference = 58C803742021D3FB0077E79F /* DailyWireUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58C803492021D3FB0077E79F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Qiming Chen";
+				TargetAttributes = {
+					5874B3562029B15C0050FED7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					58C803502021D3FB0077E79F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					58C803682021D3FB0077E79F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58C803502021D3FB0077E79F;
+					};
+					58C803732021D3FB0077E79F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58C803502021D3FB0077E79F;
+					};
+				};
+			};
+			buildConfigurationList = 58C8034C2021D3FB0077E79F /* Build configuration list for PBXProject "DailyWire" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58C803482021D3FB0077E79F;
+			productRefGroup = 58C803522021D3FB0077E79F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58C803502021D3FB0077E79F /* DailyWire */,
+				58C803682021D3FB0077E79F /* DailyWireTests */,
+				58C803732021D3FB0077E79F /* DailyWireUITests */,
+				5874B3562029B15C0050FED7 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5874B3552029B15C0050FED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C8034F2021D3FB0077E79F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58603F76202A33E80037A93F /* LaunchScreen.storyboard in Resources */,
+				58C8035E2021D3FB0077E79F /* Assets.xcassets in Resources */,
+				58C8035C2021D3FB0077E79F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803672021D3FB0077E79F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803722021D3FB0077E79F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D5ABFA3B34076E1D9383924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWireTests/Pods-DailyWireTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396427325A058B508AD16007 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		450370357962BE041FBC1FC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWire/Pods-DailyWire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6BB56B2EB6919ED5413F1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyWire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9228862789346176DA9F4261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyWireUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C4F65616138BD637FEA4EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWire/Pods-DailyWire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC56ED8692E504D82BD5E6E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWireUITests/Pods-DailyWireUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5B25E2C06CBC5821FA4D27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWireUITests/Pods-DailyWireUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9F0FA876FFDBCC4099E0A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyWireTests/Pods-DailyWireTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7A668E8876DCB8FB0BF182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A2444519BAC527AA9CA9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyWireTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5874B3532029B15C0050FED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5874B35B2029B15C0050FED7 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C8034D2021D3FB0077E79F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C803592021D3FB0077E79F /* WebViewController.m in Sources */,
+				58C803642021D3FB0077E79F /* main.m in Sources */,
+				58C803562021D3FB0077E79F /* AppDelegate.m in Sources */,
+				587D539A2031742A00CBB7A0 /* SettingsViewController.m in Sources */,
+				58BE73E7202C4D65001A1EC8 /* LaunchViewController.m in Sources */,
+				5838AF93202DD734000AEA0C /* IntroViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803652021D3FB0077E79F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C8036E2021D3FB0077E79F /* DailyWireTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C803702021D3FB0077E79F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C803792021D3FB0077E79F /* DailyWireUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5874B35E2029B15C0050FED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5874B3562029B15C0050FED7 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 5874B35D2029B15C0050FED7 /* PBXContainerItemProxy */;
+		};
+		58C8036B2021D3FB0077E79F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58C803502021D3FB0077E79F /* DailyWire */;
+			targetProxy = 58C8036A2021D3FB0077E79F /* PBXContainerItemProxy */;
+		};
+		58C803762021D3FB0077E79F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58C803502021D3FB0077E79F /* DailyWire */;
+			targetProxy = 58C803752021D3FB0077E79F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58C8035A2021D3FB0077E79F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58C8035B2021D3FB0077E79F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5874B3602029B15C0050FED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4C0FA7B71569AAEFBFBE59 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWire.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5874B3612029B15C0050FED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10D2CCD0F5B2C8BD2E2A7DD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWire.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58C8037B2021D3FB0077E79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58C8037C2021D3FB0077E79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58C8037E2021D3FB0077E79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBAEB942EEBA85B77AF3671 /* Pods-DailyWire.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DailyWire/DailyWire.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",
+				);
+				INFOPLIST_FILE = DailyWire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58C8037F2021D3FB0077E79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3138511AD93B075CF6012CAE /* Pods-DailyWire.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DailyWire/DailyWire.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",
+				);
+				INFOPLIST_FILE = DailyWire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58C803812021D3FB0077E79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF0CC5EB87B1E3C7193D977 /* Pods-DailyWireTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = DailyWireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyWire.app/DailyWire";
+			};
+			name = Debug;
+		};
+		58C803822021D3FB0077E79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE30F1AE99769F7BBAAE682E /* Pods-DailyWireTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = DailyWireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyWire.app/DailyWire";
+			};
+			name = Release;
+		};
+		58C803842021D3FB0077E79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8601965B73816EED86A0C6 /* Pods-DailyWireUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = DailyWireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyWire;
+			};
+			name = Debug;
+		};
+		58C803852021D3FB0077E79F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E23F94436CA34C5D61B6283 /* Pods-DailyWireUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWB79TFU79;
+				INFOPLIST_FILE = DailyWireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = set.DailyWireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyWire;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5874B3622029B15C0050FED7 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5874B3602029B15C0050FED7 /* Debug */,
+				5874B3612029B15C0050FED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C8034C2021D3FB0077E79F /* Build configuration list for PBXProject "DailyWire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C8037B2021D3FB0077E79F /* Debug */,
+				58C8037C2021D3FB0077E79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C8037D2021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C8037E2021D3FB0077E79F /* Debug */,
+				58C8037F2021D3FB0077E79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C803802021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C803812021D3FB0077E79F /* Debug */,
+				58C803822021D3FB0077E79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C803832021D3FB0077E79F /* Build configuration list for PBXNativeTarget "DailyWireUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C803842021D3FB0077E79F /* Debug */,
+				58C803852021D3FB0077E79F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58C803492021D3FB0077E79F /* Project object */;
+}
