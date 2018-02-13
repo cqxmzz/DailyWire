@@ -125,6 +125,9 @@
             settingsViewController->webViewController = self;
             [self presentViewController:settingsViewController animated:YES completion:nil];
             decisionHandler(WKNavigationActionPolicyCancel);
+        } else if ([[NSString stringWithFormat:@"%@", url] hasSuffix:@".pdf"]) {
+            decisionHandler(WKNavigationActionPolicyCancel);
+            [self applicationOpen:url];
         } else {
             decisionHandler(WKNavigationActionPolicyAllow);
         }
@@ -155,7 +158,8 @@
     if (!navigationAction.targetFrame.isMainFrame) {
         NSURL *url = navigationAction.request.URL;
         if ([[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://disqus.com/next/login"] ||
-            [[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://disqus.com/_ax"]) {
+            [[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://disqus.com/_ax"] ||
+            [[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://www.dailywire.com/"]) {
             [self handleNavigate:url.absoluteString];
         } else {
             [self safariView:url];
@@ -170,7 +174,8 @@
         return;
     }
     NSString *js =
-        @"var style = document.createElement('style');\
+        @"var webChanges = function() {\
+            var style = document.createElement('style');\
             style.innerHTML = '#sovrn_beacon { display: none} img[src*=\"serving\"] {display: none} img[src*=\"pixel\"] {display: none} img[src*=\"flashtalking\"] {display: none} img[src*=\"doubleclick\"] {display: none} img[src*=\"connatix\"] {display: none} img[src*=\"researchnow\"] {display: none}';\
             document.head.appendChild(style);\
             var settingNode = document.createElement(\"li\");\
@@ -182,12 +187,14 @@
             if (document.getElementsByClassName(\"main-navigation\")[0].children[0].getElementsByTagName(\"li\").length == 5) {\
                 document.getElementsByClassName(\"main-navigation\")[0].children[0].insertAdjacentElement('afterbegin', settingNode);\
             }\
-            \"a\"";
+        };\
+        setTimeout(webChanges, 500);\
+        \"a\"";
     [self.webView evaluateJavaScript:js completionHandler:^(NSString *result, NSError * _Nullable error) {
         if (error) {
             NSLog(@"%@", error);
             NSDate* now = [NSDate date];
-            if ([now timeIntervalSinceDate:startDate] < 5.0f) {
+            if ([now timeIntervalSinceDate:startDate] < 10.0f) {
                 [self webChanges];
             }
         }
