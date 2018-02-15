@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     webViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
     id notificationOpenedBlock = ^(OSNotificationOpenedResult *result) {
         NSString *url = result.notification.payload.rawPayload[@"custom"][@"a"][@"url"];

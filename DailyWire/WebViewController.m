@@ -7,7 +7,6 @@
 //
 
 #import "WebViewController.h"
-#import "LaunchViewController.h"
 #import "SettingsViewController.h"
 
 @interface WebViewController ()
@@ -184,7 +183,7 @@
             aTag.setAttribute('href',\"/app/settings\");\
             aTag.setAttribute('class',\"btn-primary-sm\");\
             aTag.innerHTML = \"App Settings\";\
-            if (document.getElementsByClassName(\"main-navigation\")[0].children[0].getElementsByTagName(\"li\").length == 5) {\
+            if (document.getElementsByClassName(\"main-navigation\")[0].children[0].getElementsByTagName(\"li\")[0].href != \"/app/settings\") {\
                 document.getElementsByClassName(\"main-navigation\")[0].children[0].insertAdjacentElement('afterbegin', settingNode);\
             }\
         };\
@@ -205,10 +204,28 @@
     [self webChanges];
 }
 
+- (void)setRefresher {
+    if (!refreshControl) {
+        refreshControl = [[UIRefreshControl alloc] init];
+    }
+    NSString *js = @"document.getElementById(\"header\").offsetHeight";
+    [self.webView evaluateJavaScript:js completionHandler:^(NSString *result, NSError *error) {
+        NSInteger height = [result integerValue];
+        refreshControl.bounds = CGRectMake(refreshControl.bounds.origin.x,
+                                           height,
+                                           refreshControl.bounds.size.width,
+                                           refreshControl.bounds.size.height);
+        [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+        [self.webView.scrollView addSubview:refreshControl];
+        [refreshControl didMoveToSuperview];
+        [refreshControl setValue:@(80) forKey:@"_snappingHeight"];
+    }];
+}
+
 // Handle progress change
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:NSStringFromSelector(@selector(estimatedProgress))] && object == self.webView) {
-        // NSLog(@"%f", self.webView.estimatedProgress);
+        NSLog(@"%f", self.webView.estimatedProgress);
         [self.progView setAlpha:1.0f];
         [self.progView setProgress:self.webView.estimatedProgress animated:YES];
         // Almost finish
@@ -220,21 +237,7 @@
                 [self.progView setProgress:0.0f animated:NO];
             }];
             // Refresher
-            if (!refreshControl) {
-                refreshControl = [[UIRefreshControl alloc] init];
-                NSString *js = @"document.getElementById(\"header\").offsetHeight";
-                [self.webView evaluateJavaScript:js completionHandler:^(NSString *result, NSError *error) {
-                    NSInteger height = [result integerValue];
-                    refreshControl.bounds = CGRectMake(refreshControl.bounds.origin.x,
-                                                       height,
-                                                       refreshControl.bounds.size.width,
-                                                       refreshControl.bounds.size.height);
-                    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
-                    [self.webView.scrollView addSubview:refreshControl];
-                    [refreshControl didMoveToSuperview];
-                    [refreshControl setValue:@(80) forKey:@"_snappingHeight"];
-                }];
-            }
+            [self setRefresher];
         }
     } else {
         // Make sure to call the superclass's implementation in the else block in case it is also implementing KVO

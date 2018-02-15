@@ -27,9 +27,8 @@
 // Intro Button Click
 -(void)introButtonAction {
     [[NSUserDefaults standardUserDefaults] setValue:@YES forKey:@"hasShowedIntro"];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self presentViewController:webViewController animated:YES completion:nil];
-    });
+    UIWindow *window = [self.view window];
+    [window setRootViewController:webViewController];
 }
 
 @end

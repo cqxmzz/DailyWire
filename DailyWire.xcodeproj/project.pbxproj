@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		07F24D8B8C6C8E1DB3D9FC87 /* libPods-DailyWireTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900CA1738CDBFF96ED4E505C /* libPods-DailyWireTests.a */; };
 		173495E9B7F60F25E91789F7 /* libPods-DailyWireUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8AFCC42B57D65895121829 /* libPods-DailyWireUITests.a */; };
-		58192BCF2032CC40002DFED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58192BCE2032CC40002DFED0 /* Main.storyboard */; };
 		5838AF93202DD734000AEA0C /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838AF92202DD734000AEA0C /* IntroViewController.m */; };
 		58603F76202A33E80037A93F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58603F75202A33E80037A93F /* LaunchScreen.storyboard */; };
 		5874B35B2029B15C0050FED7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5874B35A2029B15C0050FED7 /* NotificationService.m */; };
 		5874B35F2029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5874B3572029B15C0050FED7 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		587D539A2031742A00CBB7A0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D53982031742A00CBB7A0 /* SettingsViewController.m */; };
+		588BDB6720341458003FF8DF /* feednotify.py in Resources */ = {isa = PBXBuildFile; fileRef = 588BDB6620341458003FF8DF /* feednotify.py */; };
+		588C4DE720343B8E0096FE4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58192BCE2032CC40002DFED0 /* Main.storyboard */; };
+		588C4DEA20343CDA0096FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
+		588C4DEB20343CDB0096FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
+		588C4DEC20343CDB0096FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
+		588C4DED20343CDC0096FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
 		5894BE692029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5894BE6A2029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		5894BE6C2029BB5C008AA9A1 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5894BE6B2029BB5C008AA9A1 /* OneSignal.framework */; };
 		58BE73E7202C4D65001A1EC8 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BE73E6202C4D65001A1EC8 /* LaunchViewController.m */; };
@@ -23,7 +28,6 @@
 		58C803642021D3FB0077E79F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803632021D3FB0077E79F /* main.m */; };
 		58C8036E2021D3FB0077E79F /* DailyWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8036D2021D3FB0077E79F /* DailyWireTests.m */; };
 		58C803792021D3FB0077E79F /* DailyWireUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C803782021D3FB0077E79F /* DailyWireUITests.m */; };
-		58D28BCC2032CA74009DACBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C8035D2021D3FB0077E79F /* Assets.xcassets */; };
 		D7EFFD76476E5098432FFEC5 /* libPods-DailyWire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69248F705FC40D4EA9AC0D6E /* libPods-DailyWire.a */; };
 		FBAF953E806B6877F7392A1F /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1D8DF3B48B69F87C4C548 /* libPods-OneSignalNotificationServiceExtension.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +86,7 @@
 		5874B35C2029B15C0050FED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587D53982031742A00CBB7A0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		587D53992031742A00CBB7A0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		588BDB6620341458003FF8DF /* feednotify.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = feednotify.py; sourceTree = "<group>"; };
 		5894BE6A2029BB0A008AA9A1 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5894BE6B2029BB5C008AA9A1 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
 		58BE73E5202C4D3A001A1EC8 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
@@ -216,6 +221,7 @@
 				58C8035D2021D3FB0077E79F /* Assets.xcassets */,
 				58C803622021D3FB0077E79F /* Info.plist */,
 				58C803632021D3FB0077E79F /* main.m */,
+				588BDB6620341458003FF8DF /* feednotify.py */,
 			);
 			path = DailyWire;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588C4DED20343CDC0096FE4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58192BCF2032CC40002DFED0 /* Main.storyboard in Resources */,
+				588BDB6720341458003FF8DF /* feednotify.py in Resources */,
 				58603F76202A33E80037A93F /* LaunchScreen.storyboard in Resources */,
-				58D28BCC2032CA74009DACBF /* Assets.xcassets in Resources */,
+				588C4DEA20343CDA0096FE4D /* Assets.xcassets in Resources */,
+				588C4DE720343B8E0096FE4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588C4DEB20343CDB0096FE4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588C4DEC20343CDB0096FE4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,7 +756,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -795,7 +805,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

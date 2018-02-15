@@ -15,11 +15,12 @@
 
 @implementation LaunchViewController
 
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     webViewController = appDelegate->webViewController;
-    
+    UIWindow *window = [self.view window];
     if (![[NSUserDefaults standardUserDefaults] valueForKey:@"hasShowedIntro"]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [webViewController.view setNeedsLayout];
@@ -28,7 +29,9 @@
             IntroViewController *introViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"IntroViewController"];
             introViewController->webViewController = webViewController;
             [NSThread sleepForTimeInterval:2.0f];
-            [self presentViewController:introViewController animated:YES completion:nil];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [window setRootViewController:introViewController];
+            });
         });
     } else {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -36,11 +39,12 @@
         });
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [NSThread sleepForTimeInterval:1.5f];
-            [self presentViewController:webViewController animated:YES completion:nil];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [window setRootViewController:webViewController];
+            });
         });
     }
 }
-
 
 
 @end
