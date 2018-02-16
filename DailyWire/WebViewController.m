@@ -119,7 +119,7 @@
     [self handleNavigateBar:navigationAction];
     if ([[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://www.dailywire.com/"]) {
         if ([[NSString stringWithFormat:@"%@", url] hasPrefix: @"https://www.dailywire.com/app/settings"]) {
-            NSLog(@"settings clicked");
+            // NSLog(@"settings clicked");
             SettingsViewController *settingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
             settingsViewController->webViewController = self;
             [self presentViewController:settingsViewController animated:YES completion:nil];
@@ -183,7 +183,7 @@
             aTag.setAttribute('href',\"/app/settings\");\
             aTag.setAttribute('class',\"btn-primary-sm\");\
             aTag.innerHTML = \"App Settings\";\
-            if (document.getElementsByClassName(\"main-navigation\")[0].children[0].getElementsByTagName(\"li\")[0].href != \"/app/settings\") {\
+            if (document.getElementsByClassName(\"main-navigation\")[0].children[0].getElementsByTagName(\"li\")[0].innerHTML != \"App Settings\") {\
                 document.getElementsByClassName(\"main-navigation\")[0].children[0].insertAdjacentElement('afterbegin', settingNode);\
             }\
         };\
@@ -191,7 +191,7 @@
         \"a\"";
     [self.webView evaluateJavaScript:js completionHandler:^(NSString *result, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@", error);
+            // NSLog(@"%@", error);
             NSDate* now = [NSDate date];
             if ([now timeIntervalSinceDate:startDate] < 10.0f) {
                 [self webChanges];
@@ -225,7 +225,7 @@
 // Handle progress change
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:NSStringFromSelector(@selector(estimatedProgress))] && object == self.webView) {
-        NSLog(@"%f", self.webView.estimatedProgress);
+        // NSLog(@"%f", self.webView.estimatedProgress);
         [self.progView setAlpha:1.0f];
         [self.progView setProgress:self.webView.estimatedProgress animated:YES];
         // Almost finish
