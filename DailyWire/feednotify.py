@@ -35,7 +35,7 @@ feedparser.USER_AGENT = "FeedNotify/%s +http://burtonini.com/" % VERSION
 h = HTMLParser()
 
 feeds = []
-testing = True
+testing = False
 
 class Feed:
     def __init__(self, title, url):
