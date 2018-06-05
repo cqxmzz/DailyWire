@@ -103,16 +103,15 @@ class Feed:
 
             figures = htmlSoup.findAll('figure')
             for figure in figures:
-                if figure["class"] == "media":
-                    src = figure.findAll('img')[0]["src"]
-                    idx = src.find(".jpg")
-                    if idx > 0:
-                        media = src[:idx+4]
-                        break
-                    idx = src.find(".jpeg")
-                    if idx > 0:
-                        media = src[:idx+5]
+	    	src = figure.findAll('img')[0]["src"]
+                idx = src.find(".jpg")
+                if idx > 0:
+                    media = src[:idx+4]
                     break
+                idx = src.find(".jpeg")
+                if idx > 0:
+                    media = src[:idx+5]
+                break
 
             if media == "":
                 ass = htmlSoup.findAll('a', href=True)
